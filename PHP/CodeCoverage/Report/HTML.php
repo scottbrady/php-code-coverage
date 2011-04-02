@@ -190,8 +190,6 @@ class PHP_CodeCoverage_Report_HTML
     protected function copyFiles($target)
     {
         $files = array(
-          'butter.png',
-          'chameleon.png',
           'close12_1.gif',
           'container.css',
           'container-min.js',
@@ -203,8 +201,6 @@ class PHP_CodeCoverage_Report_HTML
           'RGraph.common.core.js',
           'RGraph.common.tooltips.js',
           'RGraph.scatter.js',
-          'scarlet_red.png',
-          'snow.png',
           'style.css',
           'yahoo-dom-event.js'
         );
