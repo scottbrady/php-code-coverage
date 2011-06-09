@@ -209,13 +209,10 @@ class PHP_CodeCoverage_Report_HTML_Renderer_Dashboard extends PHP_CodeCoverage_R
             }
         }
 
-        asort($risks);
-
-        $risks = array_reverse(
-          array_slice($risks, 0, min($max, count($risks)))
-        );
+        arsort($risks);
 
         $buffer = '';
+        $risks  = array_slice($risks, 0, min($max, count($risks)));
 
         foreach ($risks as $name => $crap) {
             $buffer .= sprintf(
